@@ -26,5 +26,5 @@ class OpenAIClient:
 
     def _generate_prompt(self,recommendation):
         return f"""Given the following input:{recommendation} Recommend 3 similar songs such as the input song, and provide short descriptions for all
-            the recommended songs and why they would be similar
+            the recommended songs and why they would be similar, including the onese in the recommendation input.
         """
